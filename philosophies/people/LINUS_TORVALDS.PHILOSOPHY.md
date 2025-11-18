@@ -1,3 +1,11 @@
+---
+layout: default
+title: Linus Torvalds
+parent: People
+grand_parent: Philosophies
+nav_order: 14
+---
+
 # Linus Torvalds: Coding Philosophy
 
 > Creator of Linux and Git | Pragmatism over Perfection

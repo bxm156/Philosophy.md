@@ -1,3 +1,11 @@
+---
+layout: default
+title: Tim Berners-Lee
+parent: People
+grand_parent: Philosophies
+nav_order: 19
+---
+
 # Tim Berners-Lee's Programming Philosophy
 
 > "The web is more a social creation than a technical one."

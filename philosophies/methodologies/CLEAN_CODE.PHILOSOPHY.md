@@ -1,3 +1,11 @@
+---
+layout: default
+title: Clean Code
+parent: Methodologies
+grand_parent: Philosophies
+nav_order: 1
+---
+
 # Clean Code: Philosophy
 
 > Code Should Read Like Well-Written Prose | Robert C. Martin (Uncle Bob)

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Guido van Rossum
+parent: People
+grand_parent: Philosophies
+nav_order: 9
+---
+
 # Guido van Rossum's Programming Philosophy
 
 > "There should be one—and preferably only one—obvious way to do it."

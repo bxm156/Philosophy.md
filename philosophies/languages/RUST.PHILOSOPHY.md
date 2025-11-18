@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rust
+parent: Languages
+grand_parent: Philosophies
+nav_order: 2
+---
+
 # Rust: Language Philosophy
 
 > Safety, Speed, Concurrency | Fearless Programming

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rob Pike
+parent: People
+grand_parent: Philosophies
+nav_order: 18
+---
+
 # Rob Pike: Coding Philosophy
 
 > Co-creator of Go, UTF-8, and Unix | Simplicity, Clarity, and Concurrency

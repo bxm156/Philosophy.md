@@ -1,3 +1,11 @@
+---
+layout: default
+title: Bjarne Stroustrup
+parent: People
+grand_parent: Philosophies
+nav_order: 3
+---
+
 # Bjarne Stroustrup's Programming Philosophy
 
 > "C++ is designed to allow you to express ideas, but if you don't have ideas or don't have any clue about how to express them, C++ doesn't offer much help."

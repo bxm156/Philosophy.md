@@ -1,3 +1,11 @@
+---
+layout: default
+title: Functional Programming
+parent: Methodologies
+grand_parent: Philosophies
+nav_order: 3
+---
+
 # Functional Programming: Philosophy
 
 > Functions, Immutability, Composition | Programming with Mathematical Purity

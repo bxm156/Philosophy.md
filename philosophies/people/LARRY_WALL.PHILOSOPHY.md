@@ -1,3 +1,11 @@
+---
+layout: default
+title: Larry Wall
+parent: People
+grand_parent: Philosophies
+nav_order: 13
+---
+
 # Larry Wall's Programming Philosophy
 
 > "There's more than one way to do it." (TMTOWTDI)

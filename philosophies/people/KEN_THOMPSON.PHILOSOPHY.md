@@ -1,3 +1,11 @@
+---
+layout: default
+title: Ken Thompson
+parent: People
+grand_parent: Philosophies
+nav_order: 12
+---
+
 # Ken Thompson's Programming Philosophy
 
 > "When in doubt, use brute force."

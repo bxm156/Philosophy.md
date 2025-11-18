@@ -1,3 +1,11 @@
+---
+layout: default
+title: John Carmack
+parent: People
+grand_parent: Philosophies
+nav_order: 11
+---
+
 # John Carmack: Coding Philosophy
 
 > Performance, Deep Understanding, and Relentless Optimization | Creator of Doom, Quake, and id Tech

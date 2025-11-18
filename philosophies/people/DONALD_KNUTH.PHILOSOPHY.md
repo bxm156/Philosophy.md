@@ -1,3 +1,11 @@
+---
+layout: default
+title: Donald Knuth
+parent: People
+grand_parent: Philosophies
+nav_order: 7
+---
+
 # Donald Knuth: Coding Philosophy
 
 > Literate Programming, Mathematical Rigor, and The Art of Computer Programming

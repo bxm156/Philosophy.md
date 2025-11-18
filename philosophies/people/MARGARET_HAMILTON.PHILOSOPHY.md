@@ -1,3 +1,11 @@
+---
+layout: default
+title: Margaret Hamilton
+parent: People
+grand_parent: Philosophies
+nav_order: 15
+---
+
 # Margaret Hamilton's Programming Philosophy
 
 > "There was no choice but to be pioneers."

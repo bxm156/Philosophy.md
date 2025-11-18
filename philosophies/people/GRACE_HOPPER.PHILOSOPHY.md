@@ -1,3 +1,11 @@
+---
+layout: default
+title: Grace Hopper
+parent: People
+grand_parent: Philosophies
+nav_order: 8
+---
+
 # Grace Hopper's Programming Philosophy
 
 > "It's easier to ask forgiveness than it is to get permission."

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Brendan Eich
+parent: People
+grand_parent: Philosophies
+nav_order: 4
+---
+
 # Brendan Eich's Programming Philosophy
 
 > "Always bet on JavaScript."

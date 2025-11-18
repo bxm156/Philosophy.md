@@ -1,3 +1,11 @@
+---
+layout: default
+title: Martin Fowler
+parent: People
+grand_parent: Philosophies
+nav_order: 16
+---
+
 # Martin Fowler: Coding Philosophy
 
 > Refactoring, Evolutionary Design, and Enterprise Patterns | Principles Over Tools

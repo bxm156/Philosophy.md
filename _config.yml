@@ -1,0 +1,81 @@
+title: Philosophy.md
+description: A curated collection of coding philosophies from thought leaders, programming languages, and software development methodologies.
+theme: just-the-docs
+
+url: https://bxm156.github.io
+baseurl: /Philosophy.md
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Aux links for the upper right navigation
+aux_links:
+  "View on GitHub":
+    - "https://github.com/bxm156/Philosophy.md"
+
+aux_links_new_tab: true
+
+# Footer content
+footer_content: "Philosophy.md - Coding Philosophies for Developers and AI Tools"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Color scheme
+color_scheme: light
+
+# Enable callouts
+callouts_level: quiet
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
+
+# Collections for organizing content
+collections:
+  philosophies:
+    output: true
+    permalink: /:collection/:path/
+
+# Exclude from processing
+exclude:
+  - .git/
+  - .github/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+
+# Navigation structure
+nav_external_links:
+  - title: GitHub Repository
+    url: https://github.com/bxm156/Philosophy.md
+
+# Just the Docs specific settings
+ga_tracking:
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/bxm156/Philosophy.md"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"

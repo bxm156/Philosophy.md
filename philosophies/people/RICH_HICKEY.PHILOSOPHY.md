@@ -1,3 +1,11 @@
+---
+layout: default
+title: Rich Hickey
+parent: People
+grand_parent: Philosophies
+nav_order: 17
+---
+
 # Rich Hickey: Coding Philosophy
 
 > Creator of Clojure | Simplicity is a Choice

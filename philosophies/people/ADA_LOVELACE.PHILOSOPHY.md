@@ -1,3 +1,11 @@
+---
+layout: default
+title: Ada Lovelace
+parent: People
+grand_parent: Philosophies
+nav_order: 1
+---
+
 # Ada Lovelace's Programming Philosophy
 
 > "The Analytical Engine weaves algebraic patterns, just as the Jacquard loom weaves flowers and leaves."

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Conventional Commits
+parent: Methodologies
+grand_parent: Philosophies
+nav_order: 2
+---
+
 # Conventional Commits Philosophy
 
 > "A lightweight convention on top of commit messages that creates structured, machine-readable commit history"

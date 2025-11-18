@@ -1,3 +1,11 @@
+---
+layout: default
+title: TDD
+parent: Methodologies
+grand_parent: Philosophies
+nav_order: 4
+---
+
 # Test-Driven Development (TDD): Philosophy
 
 > Red, Green, Refactor | Tests First, Design Emerges

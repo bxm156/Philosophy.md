@@ -1,3 +1,11 @@
+---
+layout: default
+title: Brian Kernighan
+parent: People
+grand_parent: Philosophies
+nav_order: 5
+---
+
 # Brian Kernighan's Programming Philosophy
 
 > "Controlling complexity is the essence of computer programming."

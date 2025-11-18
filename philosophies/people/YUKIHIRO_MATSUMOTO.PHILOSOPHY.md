@@ -1,3 +1,11 @@
+---
+layout: default
+title: Yukihiro Matsumoto
+parent: People
+grand_parent: Philosophies
+nav_order: 20
+---
+
 # Yukihiro "Matz" Matsumoto's Programming Philosophy
 
 > "Ruby is designed to make programmers happy."

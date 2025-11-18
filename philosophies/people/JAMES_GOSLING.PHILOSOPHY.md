@@ -1,3 +1,11 @@
+---
+layout: default
+title: James Gosling
+parent: People
+grand_parent: Philosophies
+nav_order: 10
+---
+
 # James Gosling's Programming Philosophy
 
 > "Write once, run anywhere."

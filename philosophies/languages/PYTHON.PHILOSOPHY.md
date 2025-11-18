@@ -1,3 +1,11 @@
+---
+layout: default
+title: Python
+parent: Languages
+grand_parent: Philosophies
+nav_order: 1
+---
+
 # Python: Language Philosophy
 
 > Beautiful is Better Than Ugly | The Zen of Python

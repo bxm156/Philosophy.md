@@ -1,3 +1,11 @@
+---
+layout: default
+title: Philosophies
+nav_order: 2
+has_children: true
+permalink: /philosophies/
+---
+
 # Philosophy Files Index
 
 > A curated collection of coding philosophies from thought leaders, programming languages, and software development methodologies.

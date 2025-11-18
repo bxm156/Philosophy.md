@@ -1,3 +1,11 @@
+---
+layout: default
+title: Dennis Ritchie
+parent: People
+grand_parent: Philosophies
+nav_order: 6
+---
+
 # Dennis Ritchie's Programming Philosophy
 
 > "UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity."

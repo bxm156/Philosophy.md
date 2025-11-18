@@ -1,3 +1,11 @@
+---
+layout: default
+title: Anders Hejlsberg
+parent: People
+grand_parent: Philosophies
+nav_order: 2
+---
+
 # Anders Hejlsberg's Programming Philosophy
 
 > "Type systems exist for one purpose: to prevent bugs."
