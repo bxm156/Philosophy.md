@@ -1,0 +1,19 @@
+{
+  "name": "philosophy",
+  "version": "1.0.0",
+  "description": "Install and customize coding philosophies from legendary developers and methodologies",
+  "author": "bxm156",
+  "repository": "https://github.com/bxm156/Philosophy.md",
+  "license": "MIT",
+  "keywords": [
+    "philosophy",
+    "coding-style",
+    "best-practices",
+    "tdd",
+    "clean-code",
+    "carmack",
+    "torvalds",
+    "architecture",
+    "methodology"
+  ]
+}

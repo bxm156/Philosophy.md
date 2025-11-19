@@ -1,0 +1,16 @@
+# Worktrees
+.worktrees/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
