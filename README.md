@@ -2,51 +2,22 @@
 
 Install and customize coding philosophies from legendary developers and proven methodologies.
 
-## Overview
-
-The Philosophy.md plugin lets you:
-
-- 📚 **Install** pre-made philosophies from 20+ legendary developers and methodologies
-- 🎨 **Create** custom philosophies by blending multiple approaches through an interactive interview
-- 💡 **Learn** from the wisdom of pioneers like John Carmack, Linus Torvalds, Martin Fowler, and more
-
 ## Installation
-
-### Add the Marketplace
 
 ```bash
 /plugin marketplace add bxm156/Philosophy.md
-```
-
-### Install the Plugin
-
-```bash
 /plugin install philosophy
 ```
 
-That's it! The plugin is now ready to use.
-
-## Available Commands
-
-### Core Commands
+## Commands
 
 ### `/philosophy:list`
 
-Browse all available philosophies with descriptions.
-
-```bash
-/philosophy:list
-```
-
-Shows philosophies organized by category:
-
-- **👤 People**: John Carmack, Linus Torvalds, Martin Fowler, Donald Knuth, and 16 more
-- **📚 Methodologies**: TDD, Clean Code, Functional Programming, Conventional Commits
-- **💻 Languages**: Python, Rust
+Browse all available philosophies (20+ developers, methodologies, and languages).
 
 ### `/philosophy:install [name]`
 
-Install a pre-made philosophy to your project.
+Install a pre-made philosophy to `PHILOSOPHY.md` in your project root.
 
 ```bash
 /philosophy:install john_carmack
@@ -54,311 +25,57 @@ Install a pre-made philosophy to your project.
 /philosophy:install python
 ```
 
-Creates `PHILOSOPHY.md` in your project root with the complete philosophy.
-
 **Available Philosophies:**
 
-**People:**
+**People:** `john_carmack`, `linus_torvalds`, `martin_fowler`, `donald_knuth`, `rich_hickey`, `guido_van_rossum`, `yukihiro_matsumoto`, `dennis_ritchie`, `brian_kernighan`, `ken_thompson`, `rob_pike`, `larry_wall`, `brendan_eich`, `james_gosling`, `anders_hejlsberg`, `bjarne_stroustrup`, `grace_hopper`, `ada_lovelace`, `margaret_hamilton`, `tim_berners_lee`
 
-- `john_carmack` - Performance, Deep Understanding, and Relentless Optimization
-- `linus_torvalds` - Pragmatic Systems Programming
-- `martin_fowler` - Clean Code & Refactoring
-- `donald_knuth` - Literate Programming & Correctness
-- `rich_hickey` - Simplicity & Functional Design
-- `guido_van_rossum` - Python's Benevolent Dictator
-- `yukihiro_matsumoto` - Ruby's Principle of Least Surprise
-- `dennis_ritchie` - C and Unix Philosophy
-- `brian_kernighan` - Clear, Simple, Practical Code
-- `ken_thompson` - Minimalism and Efficiency
-- `rob_pike` - Simplicity and Clarity
-- `larry_wall` - Perl's "There's More Than One Way"
-- `brendan_eich` - JavaScript's Prototype-Based Design
-- `james_gosling` - Java's "Write Once, Run Anywhere"
-- `anders_hejlsberg` - C# and TypeScript Design
-- `bjarne_stroustrup` - C++ Complexity Management
-- `grace_hopper` - Pioneering Computer Science
-- `ada_lovelace` - The First Programmer
-- `margaret_hamilton` - Software Engineering Rigor
-- `tim_berners_lee` - Web Standards and Openness
+**Methodologies:** `tdd`, `clean_code`, `functional_programming`, `conventional_commits`
 
-**Methodologies:**
+**Languages:** `python`, `rust`
 
-- `tdd` - Test-Driven Development
-- `clean_code` - Readability & Maintainability
-- `functional_programming` - Immutability & Pure Functions
-- `conventional_commits` - Clear Commit Messages
+### `/philosophy:create-custom`
 
-**Languages:**
+Create a custom blended philosophy through an interactive interview. Select 2-4 philosophies to blend and answer questions about your preferences.
 
-- `python` - The Zen of Python
-- `rust` - Safety & Performance
+### `/philosophy:quick-check`
 
-### `/philosophy:create`
-
-Create a custom philosophy through an interactive interview.
-
-```bash
-/philosophy:create
-```
-
-**Process:**
-
-1. **Select 2-4 philosophies** to blend (e.g., "John Carmack, TDD, Python")
-2. **Answer interview questions** about your preferences:
-   - Testing approach
-   - Performance vs simplicity tradeoffs
-   - Code style preferences
-   - Development approach
-3. **Get a custom blended philosophy** saved to `PHILOSOPHY.md`
-
-**Example Output:**
-
-```markdown
-# Custom Philosophy: Test-Driven Performance with Pragmatic Python
-
-This philosophy blends:
-- 40% Test-Driven Development (TDD)
-- 35% John Carmack's Performance Philosophy
-- 25% Python's Zen
-
-## Core Principles
-
-### 1. Test-Driven Performance
-Write tests first, but profile and optimize bottlenecks ruthlessly...
-```
-
-## What Gets Created
-
-After running `/philosophy:install` or `/philosophy:create`, you'll have:
-
-```text
-your-project/
-├── PHILOSOPHY.md          # ✅ Your coding philosophy
-├── src/
-├── tests/
-└── ...
-```
-
-The philosophy file stays in your project root, providing guidance whenever you need it.
-
-## Example Workflows
-
-### Quick Start with a Pre-Made Philosophy
-
-```bash
-# Browse options
-/philosophy:list
-
-# Install TDD philosophy
-/philosophy:install tdd
-
-# Start coding with TDD principles!
-```
-
-### Create a Custom Blend
-
-```bash
-# Start the interview
-/philosophy:create
-
-# Select philosophies
-> John Carmack, TDD, Python
-
-# Answer questions
-Q: How do you prefer to test code?
-A: Write tests first (TDD)
-
-Q: When there's a tradeoff between performance and simplicity:
-A: Balanced - profile then optimize
-
-# Get your custom philosophy
-✅ Custom philosophy created and saved to PHILOSOPHY.md!
-```
-
-### Switch Philosophies
-
-```bash
-# Try a different philosophy
-/philosophy:install martin_fowler
-
-# Your PHILOSOPHY.md is now updated to Martin Fowler's approach
-```
-
-### Team Enforcement & Review (NEW!)
-
-```bash
-# Quick philosophy check of recent changes
-/philosophy:check
-
-# Comprehensive PR review against philosophy
-/philosophy:review-pr
-```
-
-**What makes this awesome:**
-
-- 🎭 **Personality-driven feedback** - Get quotes from John Carmack, Linus Torvalds, Martin Fowler, and more!
-- ⚡ **Active enforcement** - Philosophy Guardian skill provides real-time guidance while you code
-- 🔍 **Review gates** - Philosophy Reviewer skill catches issues during code reviews
-- 💡 **Contextual quotes** - Inspiring wisdom at just the right moments
-- 🚀 **Automated hooks** - Welcome messages and reminders throughout your session
-
-### Team Enforcement Commands
-
-### `/philosophy:check`
-
-Fast philosophy alignment check of your recent changes (under 2 minutes).
-
-**Perfect for:**
-
-- Quick sanity check before committing
-- Getting fast feedback on code quality
-- Seeing philosophy alignment score
-
-**Example output:**
-
-```text
-🎯 Philosophy Quick Check: Test-Driven Performance
-
-"Make it work, make it right, make it fast." - Kent Beck
-
-✅ Aligned:
-- Excellent test coverage (94%)
-- Clean function design
-
-⚠️ Consider:
-- Memory allocation in render loop
-
-Overall: 8/10 - Strong discipline! ⚡
-```
+Fast philosophy alignment check of recent changes (<2 minutes). Get an alignment score with personality-driven feedback from your philosophy's legendary developer.
 
 ### `/philosophy:review-pr`
 
-Comprehensive philosophy-based PR review (5-10 minutes).
+Comprehensive philosophy-based PR review (5-10 minutes). Detailed analysis with specific quotes and actionable suggestions.
 
-**Perfect for:**
+## Features
 
-- Before creating a pull request
-- Code review with philosophy lens
-- Detailed alignment analysis
-
-**Complements existing code reviews:**
-
-- Use ALONGSIDE other code review tools/agents
-- Adds philosophy perspective to technical review
-- Focuses on principles and patterns, not just bugs
-
-**Example output:**
-
-```text
-# 🎯 Philosophy Review
-
-Philosophy Alignment Score: 7/10
-
-✅ Strengths
-- Test-driven discipline evident
-- Clean separation of concerns
-
-⚠️ Major Concerns
-- Function complexity in processor.ts
-  "Functions should do one thing." - Uncle Bob
-
-🎬 Next Steps
-- Refactor processData() into smaller functions
-```
-
-## How It All Works Together
-
-The Philosophy plugin provides **layered enforcement**:
-
-1. **Session Start**: Welcome message with philosophy reminder
-2. **While Coding**: Philosophy Guardian skill provides real-time guidance
-3. **After Edits**: Hooks show contextual philosopher quotes
-4. **Before Commit**: `/philosophy:check` for quick validation
-5. **Before PR**: `/philosophy:review-pr` for comprehensive analysis
-6. **During Review**: Philosophy Reviewer skill assists code reviews
-
-**Think of it as your philosophy coach** - always present but never intrusive, offering wisdom at just the right moments.
+- 🎭 **Personality-driven feedback** - Quotes from Carmack, Torvalds, Fowler, and more
+- ⚡ **Real-time guidance** - Philosophy Guardian skill while you code
+- 🔍 **Review gates** - Philosophy Reviewer skill for code reviews
+- 🚀 **Automated hooks** - Session reminders and contextual wisdom
 
 ## Philosophy Sources
 
-All philosophies are sourced from:
-
-- Public writings and talks by the developers
-- Official language documentation (PEPs, RFCs, etc.)
-- Widely-accepted best practices and methodologies
-- Historical context and real-world impact
-
-Each philosophy includes:
-
-- Overview and background
-- Core principles with examples
-- Practices and patterns
-- Anti-patterns to avoid
-- Key resources and references
+All philosophies sourced from public writings, talks, official documentation, and widely-accepted best practices. Each includes core principles, examples, patterns, anti-patterns, and references.
 
 ## Use Cases
 
-- **Personal Development**: Adopt proven practices from industry legends
-- **Team Alignment**: Establish shared coding values and standards
-- **Learning**: Study different approaches to software development
-- **Decision Making**: Reference philosophy when making architectural choices
-- **Code Reviews**: Use philosophy as objective criteria for feedback
-- **Onboarding**: Help new team members understand project values
+- Adopt proven practices from industry legends
+- Establish shared team coding standards
+- Study different development approaches
+- Reference philosophy for architectural decisions
+- Use as objective code review criteria
+- Onboard new team members with project values
 
 ## Known Limitations
 
-### Script Execution Constraint
-
-**Current Status**: This plugin currently does not execute external scripts from commands.
-
-**Why this matters**: There's an [open issue in Claude Code](https://github.com/anthropics/claude-code/issues/9354) where the `${CLAUDE_PLUGIN_ROOT}` environment variable doesn't work in command markdown files (only in JSON configurations). This prevents plugins from executing bundled helper scripts.
-
-**Impact on Philosophy.md**:
-
-- ✅ All current v1.0.0 commands work perfectly (they're prompt-based)
-- ⚠️ Future features requiring script execution are blocked:
-  - Philosophy compliance validation
-  - Automated pre-commit hooks
-  - Code analysis and stack detection
-  - Configuration file modifications
-
-**Tracking**: We're monitoring [anthropics/claude-code#9354](https://github.com/anthropics/claude-code/issues/9354) for resolution. Once fixed, we'll unlock advanced features listed in [TODO.md](TODO.md).
-
-**Workaround**: For advanced users who need scripting now, Claude Code Skills can provide some capabilities, though it's not ideal for plugin distribution.
-
-## Future Enhancements
-
-See [TODO.md](TODO.md) for planned features:
-
-- CLAUDE.md integration for AI-powered guidance
-- Project-specific application and tooling integration
-- Pre-commit hooks and philosophy enforcement
-- Team collaboration features
-- Community philosophy sharing
-- And much more!
-
-**Note**: Some advanced features depend on the resolution of the `${CLAUDE_PLUGIN_ROOT}` limitation above.
+Current commands work perfectly (prompt-based). Some future features requiring script execution are blocked by [Claude Code issue #9354](https://github.com/anthropics/claude-code/issues/9354) (`${CLAUDE_PLUGIN_ROOT}` not working in command markdown files). See [TODO.md](TODO.md) for planned enhancements.
 
 ## Contributing
 
-Found a typo in a philosophy? Want to add a new one? Contributions welcome!
+Contributions welcome! Fork the repo, make changes, submit a PR.
 
-1. Fork the repository: <https://github.com/bxm156/Philosophy.md>
-2. Make your changes
-3. Submit a pull request
-
-## License
-
-MIT License - See repository for details.
-
-## Links
-
-- **Repository**: <https://github.com/bxm156/Philosophy.md>
-- **Issues**: <https://github.com/bxm156/Philosophy.md/issues>
-- **Claude Code Docs**: <https://docs.claude.com/en/docs/claude-code/plugins>
+**Repository**: <https://github.com/bxm156/Philosophy.md>
+**License**: MIT
 
 ---
 
-**Philosophy**: Simple, working, ship it! 🚀
-
-*Install a philosophy today and code with purpose.*
+*Simple, working, ship it! 🚀*
