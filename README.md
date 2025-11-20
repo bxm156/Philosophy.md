@@ -28,6 +28,8 @@ That's it! The plugin is now ready to use.
 
 ## Available Commands
 
+### Core Commands
+
 ### `/philosophy:list`
 
 Browse all available philosophies with descriptions.
@@ -181,6 +183,101 @@ A: Balanced - profile then optimize
 
 # Your PHILOSOPHY.md is now updated to Martin Fowler's approach
 ```
+
+### Team Enforcement & Review (NEW!)
+
+```bash
+# Quick philosophy check of recent changes
+/philosophy:check
+
+# Comprehensive PR review against philosophy
+/philosophy:review-pr
+```
+
+**What makes this awesome:**
+
+- 🎭 **Personality-driven feedback** - Get quotes from John Carmack, Linus Torvalds, Martin Fowler, and more!
+- ⚡ **Active enforcement** - Philosophy Guardian skill provides real-time guidance while you code
+- 🔍 **Review gates** - Philosophy Reviewer skill catches issues during code reviews
+- 💡 **Contextual quotes** - Inspiring wisdom at just the right moments
+- 🚀 **Automated hooks** - Welcome messages and reminders throughout your session
+
+### Team Enforcement Commands
+
+### `/philosophy:check`
+
+Fast philosophy alignment check of your recent changes (under 2 minutes).
+
+**Perfect for:**
+
+- Quick sanity check before committing
+- Getting fast feedback on code quality
+- Seeing philosophy alignment score
+
+**Example output:**
+
+```text
+🎯 Philosophy Quick Check: Test-Driven Performance
+
+"Make it work, make it right, make it fast." - Kent Beck
+
+✅ Aligned:
+- Excellent test coverage (94%)
+- Clean function design
+
+⚠️ Consider:
+- Memory allocation in render loop
+
+Overall: 8/10 - Strong discipline! ⚡
+```
+
+### `/philosophy:review-pr`
+
+Comprehensive philosophy-based PR review (5-10 minutes).
+
+**Perfect for:**
+
+- Before creating a pull request
+- Code review with philosophy lens
+- Detailed alignment analysis
+
+**Complements existing code reviews:**
+
+- Use ALONGSIDE other code review tools/agents
+- Adds philosophy perspective to technical review
+- Focuses on principles and patterns, not just bugs
+
+**Example output:**
+
+```text
+# 🎯 Philosophy Review
+
+Philosophy Alignment Score: 7/10
+
+✅ Strengths
+- Test-driven discipline evident
+- Clean separation of concerns
+
+⚠️ Major Concerns
+- Function complexity in processor.ts
+  "Functions should do one thing." - Uncle Bob
+
+🎬 Next Steps
+- Refactor processData() into smaller functions
+```
+
+## How It All Works Together
+
+The Philosophy plugin provides **layered enforcement**:
+
+1. **Session Start**: Welcome message with philosophy reminder
+2. **While Coding**: Philosophy Guardian skill provides real-time guidance
+3. **After Edits**: Hooks show contextual philosopher quotes
+4. **Before Commit**: `/philosophy:check` for quick validation
+5. **Before PR**: `/philosophy:review-pr` for comprehensive analysis
+6. **During Review**: Philosophy Reviewer skill assists code reviews
+
+**Think of it as your philosophy coach** - always present but never intrusive, offering wisdom at just the right moments.
 
 ## Philosophy Sources
 

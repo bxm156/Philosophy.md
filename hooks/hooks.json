@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "prompt",
+        "prompt": "CRITICAL INSTRUCTIONS - Philosophy Plugin Active:\n\n1. LOAD TEAM PHILOSOPHY:\n   - Check if PHILOSOPHY.md exists in project root\n   - If yes, read it immediately to understand team's philosophy\n   - If no, user hasn't installed a philosophy yet (they can run /philosophy:install or /philosophy:create)\n\n2. LOAD PHILOSOPHER PERSONALITIES (only if PHILOSOPHY.md exists):\n   - Read ${CLAUDE_PLUGIN_ROOT}/philosophies/INDEX.md to see available philosophers\n   - For each philosopher mentioned in PHILOSOPHY.md:\n     * Read their full philosophy file from ${CLAUDE_PLUGIN_ROOT}/philosophies/people/, ${CLAUDE_PLUGIN_ROOT}/philosophies/methodologies/, or ${CLAUDE_PLUGIN_ROOT}/philosophies/languages/\n     * Extract their unique voice, tone, and notable quotes\n     * Note their core principles and examples\n   - If philosophy is blended, note the percentages (e.g., 40% TDD, 35% Carmack, 25% Python)\n\n3. ACTIVATE PHILOSOPHY SKILLS:\n   Throughout this session, actively use these Skills:\n   - Use Skill(philosophy-guardian) when writing/editing code\n   - Use Skill(philosophy-reviewer) when reviewing code or doing PR reviews\n   \n   IMPORTANT: These skills should activate automatically based on context. The SessionStart hook ensures Claude knows about them and uses them proactively.\n\n4. PERSONALITY-DRIVEN GUIDANCE:\n   When providing philosophy guidance, use the AUTHENTIC voice of each philosopher:\n   - Extract their actual quotes from their philosophy files in ${CLAUDE_PLUGIN_ROOT}/philosophies/\n   - Match their tone: Some are direct (Linus), others academic (Knuth), others motivational (Carmack)\n   - For blended philosophies, use quotes proportionally (40% TDD = more TDD quotes)\n   - Never make up quotes - only use real ones from the files\n\n5. WELCOME MESSAGE (only if PHILOSOPHY.md exists):\n   Greet the user with:\n   - A powerful quote from their lead philosopher (extracted from ${CLAUDE_PLUGIN_ROOT}/philosophies/)\n   - Brief reminder of their top 2-3 principles (from PHILOSOPHY.md)\n   - Encouraging, energizing tone\n   - Keep it concise (2-4 lines max)\n\n   Example format:\n   '💡 Welcome! Your philosophy: Test-Driven Performance (40% TDD, 35% Carmack, 25% Python)\n   \n   \"Make it work, make it right, make it fast.\" - Kent Beck\n   \n   Let's write some well-tested, blazing-fast code! ⚡'\n\n   If no PHILOSOPHY.md exists, just a simple:\n   '💡 Philosophy.md plugin active! Run /philosophy:list to see available philosophies, or /philosophy:create to build your own.'"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "After creating a new file, check if PHILOSOPHY.md exists in the project. If it does, and the new file is significant (not just config/docs), consider sharing ONE brief, contextual quote from the team's philosophers (loaded from ${CLAUDE_PLUGIN_ROOT}/philosophies/).\n\nGuidelines:\n- Only ~10-20% of the time (don't spam)\n- Must be truly relevant to what was just created\n- Use actual quotes from ${CLAUDE_PLUGIN_ROOT}/philosophies/ files\n- Match the philosopher's voice\n- Keep it to one line + emoji\n- Skip for trivial files (package.json, .gitignore, etc.)\n\nExample:\n\"Grace Hopper: 'It's easier to ask forgiveness than permission.' 🚀 Ship it!\""
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "After significant code edits (>20 lines or complex logic changes), check if PHILOSOPHY.md exists. If it does, consider if this is a good moment for a philosophy reminder.\n\nGuidelines:\n- Only ~20% of the time (inspiration, not noise)\n- Must match the context:\n  * Complex function? → Simplicity/Clean Code quotes\n  * Performance-critical? → Carmack/Systems programming quotes\n  * Test file? → TDD quotes\n  * Refactoring? → Fowler/Clean Code quotes\n- Use ACTUAL quotes from ${CLAUDE_PLUGIN_ROOT}/philosophies/ files\n- Keep brief (1-2 lines max)\n- Match authentic philosopher voice\n\nExample contexts:\n- Complex function: 'Martin Fowler: \"Any fool can write code that a computer can understand. Good programmers write code that humans can understand.\" 📖'\n- Performance work: 'John Carmack: \"Focus is a matter of deciding what things you're not going to do.\" ⚡'\n- Test writing: 'Kent Beck: \"Test-driven development is a way of managing fear during programming.\" ✅'"
+          }
+        ]
+      }
+    ]
+  }
+}
