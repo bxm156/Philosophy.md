@@ -1,5 +1,5 @@
 ---
-name: Install Philosophy
+name: philosophy:install
 description: Install a pre-made coding philosophy from legendary developers or methodologies
 ---
 

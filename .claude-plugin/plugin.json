@@ -2,7 +2,7 @@
   "name": "philosophy",
   "version": "0.1.0",
   "description": "Install and customize coding philosophies from legendary developers with personality-driven team enforcement, real-time guidance, and code review assistance",
-  "author": "bxm156",
+  "author": {"name": "Bryan Marty"},
   "repository": "https://github.com/bxm156/Philosophy.md",
   "license": "MIT",
   "keywords": [

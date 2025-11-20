@@ -2,8 +2,13 @@
   "hooks": {
     "SessionStart": [
       {
-        "type": "prompt",
-        "prompt": "CRITICAL INSTRUCTIONS - Philosophy Plugin Active:\n\n1. LOAD TEAM PHILOSOPHY:\n   - Check if PHILOSOPHY.md exists in project root\n   - If yes, read it immediately to understand team's philosophy\n   - If no, user hasn't installed a philosophy yet (they can run /philosophy:install or /philosophy:create)\n\n2. LOAD PHILOSOPHER PERSONALITIES (only if PHILOSOPHY.md exists):\n   - Read ${CLAUDE_PLUGIN_ROOT}/philosophies/INDEX.md to see available philosophers\n   - For each philosopher mentioned in PHILOSOPHY.md:\n     * Read their full philosophy file from ${CLAUDE_PLUGIN_ROOT}/philosophies/people/, ${CLAUDE_PLUGIN_ROOT}/philosophies/methodologies/, or ${CLAUDE_PLUGIN_ROOT}/philosophies/languages/\n     * Extract their unique voice, tone, and notable quotes\n     * Note their core principles and examples\n   - If philosophy is blended, note the percentages (e.g., 40% TDD, 35% Carmack, 25% Python)\n\n3. ACTIVATE PHILOSOPHY SKILLS:\n   Throughout this session, actively use these Skills:\n   - Use Skill(philosophy-guardian) when writing/editing code\n   - Use Skill(philosophy-reviewer) when reviewing code or doing PR reviews\n   \n   IMPORTANT: These skills should activate automatically based on context. The SessionStart hook ensures Claude knows about them and uses them proactively.\n\n4. PERSONALITY-DRIVEN GUIDANCE:\n   When providing philosophy guidance, use the AUTHENTIC voice of each philosopher:\n   - Extract their actual quotes from their philosophy files in ${CLAUDE_PLUGIN_ROOT}/philosophies/\n   - Match their tone: Some are direct (Linus), others academic (Knuth), others motivational (Carmack)\n   - For blended philosophies, use quotes proportionally (40% TDD = more TDD quotes)\n   - Never make up quotes - only use real ones from the files\n\n5. WELCOME MESSAGE (only if PHILOSOPHY.md exists):\n   Greet the user with:\n   - A powerful quote from their lead philosopher (extracted from ${CLAUDE_PLUGIN_ROOT}/philosophies/)\n   - Brief reminder of their top 2-3 principles (from PHILOSOPHY.md)\n   - Encouraging, energizing tone\n   - Keep it concise (2-4 lines max)\n\n   Example format:\n   '💡 Welcome! Your philosophy: Test-Driven Performance (40% TDD, 35% Carmack, 25% Python)\n   \n   \"Make it work, make it right, make it fast.\" - Kent Beck\n   \n   Let's write some well-tested, blazing-fast code! ⚡'\n\n   If no PHILOSOPHY.md exists, just a simple:\n   '💡 Philosophy.md plugin active! Run /philosophy:list to see available philosophies, or /philosophy:create to build your own.'"
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/session-start.sh"
+          }
+        ]
       }
     ],
     "PostToolUse": [

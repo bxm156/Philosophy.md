@@ -1,5 +1,5 @@
 ---
-name: Create Custom Philosophy
+name: philosophy:create-custom
 description: Create a custom philosophy by blending multiple existing philosophies through guided interview
 ---
 

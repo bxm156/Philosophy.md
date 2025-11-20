@@ -1,15 +1,22 @@
 {
+  "name": "philosophy-marketplace",
+  "metadata": {
+    "description": "Coding philosophies from legendary developers with personality-driven enforcement and review tools"
+  },
+  "owner": {
+    "name": "Bryan Marty",
+    "email": "bxm156@users.noreply.github.com"
+  },
   "plugins": [
     {
       "name": "philosophy",
-      "source": {
-        "type": "github",
-        "repo": "bxm156/Philosophy.md",
-        "subdir": "claude-plugin"
+      "source": "./",
+      "description": "Install and customize coding philosophies from legendary developers with personality-driven team enforcement, real-time guidance, and code review assistance. Choose from 26 philosophies or create custom blends. Includes autonomous Skills, workflow hooks, and review commands with authentic philosopher quotes.",
+      "version": "0.1.0",
+      "strict": true,
+      "author": {
+        "name": "bxm156"
       },
-      "description": "Install and customize coding philosophies from legendary developers and methodologies. Choose from 20+ pre-made philosophies (John Carmack, Linus Torvalds, Martin Fowler, TDD, Clean Code, etc.) or create custom blends through an interactive interview process.",
-      "version": "1.0.0",
-      "author": "bxm156",
       "keywords": [
         "philosophy",
         "coding-style",

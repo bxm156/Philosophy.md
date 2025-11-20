@@ -1,5 +1,5 @@
 ---
-name: Quick Philosophy Check
+name: philosophy:quick-check
 description: Fast check of recent changes against team philosophy with personality-driven feedback
 ---
 

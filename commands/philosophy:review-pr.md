@@ -1,5 +1,5 @@
 ---
-name: Review PR Against Philosophy
+name: philosophy:review-pr
 description: Comprehensive philosophy-based code review for pull requests with detailed personality-driven feedback
 ---
 
