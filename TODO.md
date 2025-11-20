@@ -1,5 +1,34 @@
 # Philosophy.md Plugin - Future Enhancements
 
+## Upstream Dependency Tracking
+
+### Claude Code Issue #9354: ${CLAUDE_PLUGIN_ROOT} Support
+
+**Status**: ⏳ Waiting on upstream fix
+**Issue**: [anthropics/claude-code#9354](https://github.com/anthropics/claude-code/issues/9354)
+**Priority**: High (blocks multiple features below)
+
+**Problem**: The `${CLAUDE_PLUGIN_ROOT}` environment variable doesn't work in command markdown files, preventing plugins from executing bundled scripts.
+
+**Blocked Features**:
+
+- Philosophy compliance validation scripts (Milestone 3)
+- Automated pre-commit hooks (Milestone 3)
+- Code analysis and stack detection (Milestone 2)
+- Configuration file modifications (Milestone 2)
+- Advanced AI-powered features (Milestone 6)
+
+**Alternative Solutions Being Tracked**:
+
+1. Wait for Claude Code to fix the environment variable
+2. Local plugin installation support (`/plugin install --local`)
+3. Use Skills as temporary workaround (not ideal for distribution)
+
+**Last Checked**: 2025-11-19
+**Community Support**: 17+ upvotes, multiple users affected
+
+---
+
 ## Milestone 2: Advanced Integration
 
 ### Auto-Integration with CLAUDE.md
@@ -11,6 +40,8 @@
 
 ### Project-Specific Application
 
+⚠️ **Requires**: Claude Code issue #9354 resolution (script execution)
+
 - [ ] `/philosophy:apply` command that analyzes current project
 - [ ] Detect tech stack (package.json, requirements.txt, Cargo.toml, etc.)
 - [ ] Generate project-specific guidance based on tech stack + philosophy
@@ -18,6 +49,8 @@
 - [ ] Integrate philosophy principles with existing project conventions
 
 ### Configuration File Integration
+
+⚠️ **Requires**: Claude Code issue #9354 resolution (script execution)
 
 - [ ] Update linter configs based on philosophy (eslint, prettier, ruff, clippy)
 - [ ] Add test framework suggestions for TDD-focused philosophies
@@ -45,12 +78,16 @@
 
 ### Team Enforcement
 
+⚠️ **Requires**: Claude Code issue #9354 resolution (script execution)
+
 - [ ] Pre-commit hooks that enforce philosophy principles
 - [ ] Configurable enforcement levels (reminder, warning, blocker)
 - [ ] Philosophy compliance reporting in PR descriptions
 - [ ] Githooks integration for consistent team practices
 
 ### Philosophy Validation
+
+⚠️ **Requires**: Claude Code issue #9354 resolution (script execution)
 
 - [ ] Code review agent that checks philosophy compliance
 - [ ] Automated suggestions based on philosophy principles
@@ -135,12 +172,16 @@
 
 ### Code Analysis
 
+⚠️ **Requires**: Claude Code issue #9354 resolution (script execution)
+
 - [ ] Scan codebase to detect implicit philosophy
 - [ ] Suggest philosophies that match current patterns
 - [ ] Identify philosophy conflicts in existing code
 - [ ] Migration guides for adopting new philosophies
 
 ### Contextual Guidance
+
+⚠️ **Partially blocked**: Some features may work without scripts
 
 - [ ] Philosophy principle suggestions during coding
 - [ ] Real-time philosophy reminders in IDE

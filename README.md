@@ -208,6 +208,27 @@ Each philosophy includes:
 - **Code Reviews**: Use philosophy as objective criteria for feedback
 - **Onboarding**: Help new team members understand project values
 
+## Known Limitations
+
+### Script Execution Constraint
+
+**Current Status**: This plugin currently does not execute external scripts from commands.
+
+**Why this matters**: There's an [open issue in Claude Code](https://github.com/anthropics/claude-code/issues/9354) where the `${CLAUDE_PLUGIN_ROOT}` environment variable doesn't work in command markdown files (only in JSON configurations). This prevents plugins from executing bundled helper scripts.
+
+**Impact on Philosophy.md**:
+
+- ✅ All current v1.0.0 commands work perfectly (they're prompt-based)
+- ⚠️ Future features requiring script execution are blocked:
+  - Philosophy compliance validation
+  - Automated pre-commit hooks
+  - Code analysis and stack detection
+  - Configuration file modifications
+
+**Tracking**: We're monitoring [anthropics/claude-code#9354](https://github.com/anthropics/claude-code/issues/9354) for resolution. Once fixed, we'll unlock advanced features listed in [TODO.md](TODO.md).
+
+**Workaround**: For advanced users who need scripting now, Claude Code Skills can provide some capabilities, though it's not ideal for plugin distribution.
+
 ## Future Enhancements
 
 See [TODO.md](TODO.md) for planned features:
@@ -218,6 +239,8 @@ See [TODO.md](TODO.md) for planned features:
 - Team collaboration features
 - Community philosophy sharing
 - And much more!
+
+**Note**: Some advanced features depend on the resolution of the `${CLAUDE_PLUGIN_ROOT}` limitation above.
 
 ## Contributing
 
