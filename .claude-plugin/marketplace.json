@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    {
+      "name": "philosophy",
+      "source": {
+        "type": "github",
+        "repo": "bxm156/Philosophy.md",
+        "subdir": "claude-plugin"
+      },
+      "description": "Install and customize coding philosophies from legendary developers and methodologies. Choose from 20+ pre-made philosophies (John Carmack, Linus Torvalds, Martin Fowler, TDD, Clean Code, etc.) or create custom blends through an interactive interview process.",
+      "version": "1.0.0",
+      "author": "bxm156",
+      "keywords": [
+        "philosophy",
+        "coding-style",
+        "best-practices",
+        "tdd",
+        "clean-code",
+        "carmack",
+        "torvalds",
+        "fowler",
+        "architecture",
+        "methodology",
+        "python",
+        "rust"
+      ]
+    }
+  ]
+}
